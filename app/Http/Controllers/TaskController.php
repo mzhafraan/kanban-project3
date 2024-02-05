@@ -4,7 +4,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\TaskController;
-
 use Illuminate\Http\Request;
 
 
@@ -112,13 +111,10 @@ class TaskController extends Controller
     {
 
         $pageTitle = 'Task List'; // Ditambahkan
-
         $tasks = $this->tasks;
-
         return view('tasks.index', [
 
             'pageTitle' => $pageTitle, //Ditambahkan
-
             'tasks' => $tasks,
 
         ]);
